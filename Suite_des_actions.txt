@@ -1,0 +1,7 @@
+Dépot git partagé avec Julien
+Amelirorer la correspondance en déterminant un thème générale de la vidéo
+Lier tous les scripts les uns aux autres pour former un tunel
+Créer une interface graphique pour la fassilité d'utilsation
+faire un nettoyage complet des fichiers non utilisé (trouver un outil)
+Lier le tout avec un plugin Premiere
+Créer un automatisme complet de création de description

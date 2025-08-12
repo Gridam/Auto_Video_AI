@@ -1,0 +1,506 @@
+{
+  "20241112_132914000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_132914000_iOS.npy",
+    "n_frames": 5
+  },
+  "20241112_141654000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_141654000_iOS.npy",
+    "n_frames": 5
+  },
+  "20241112_141659000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_141659000_iOS.npy",
+    "n_frames": 5
+  },
+  "20241112_141851000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_141851000_iOS.npy",
+    "n_frames": 5
+  },
+  "20241112_164718000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_164718000_iOS.npy",
+    "n_frames": 5
+  },
+  "20241112_164729000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_164729000_iOS.npy",
+    "n_frames": 5
+  },
+  "20241112_181012000_iOS.MOV": {
+    "embedding": "embeddings\\20241112_181012000_iOS.npy",
+    "n_frames": 5
+  },
+  "C1102.MP4": {
+    "embedding": "embeddings\\C1102.npy",
+    "n_frames": 5
+  },
+  "C1103.MP4": {
+    "embedding": "embeddings\\C1103.npy",
+    "n_frames": 5
+  },
+  "C1110.MP4": {
+    "embedding": "embeddings\\C1110.npy",
+    "n_frames": 5
+  },
+  "C1111.MP4": {
+    "embedding": "embeddings\\C1111.npy",
+    "n_frames": 5
+  },
+  "C1112.MP4": {
+    "embedding": "embeddings\\C1112.npy",
+    "n_frames": 5
+  },
+  "C1113.MP4": {
+    "embedding": "embeddings\\C1113.npy",
+    "n_frames": 5
+  },
+  "C1114.MP4": {
+    "embedding": "embeddings\\C1114.npy",
+    "n_frames": 5
+  },
+  "C1115.MP4": {
+    "embedding": "embeddings\\C1115.npy",
+    "n_frames": 5
+  },
+  "C1116.MP4": {
+    "embedding": "embeddings\\C1116.npy",
+    "n_frames": 5
+  },
+  "C1118.MP4": {
+    "embedding": "embeddings\\C1118.npy",
+    "n_frames": 5
+  },
+  "C1122.MP4": {
+    "embedding": "embeddings\\C1122.npy",
+    "n_frames": 5
+  },
+  "C1123.MP4": {
+    "embedding": "embeddings\\C1123.npy",
+    "n_frames": 5
+  },
+  "C1124.MP4": {
+    "embedding": "embeddings\\C1124.npy",
+    "n_frames": 5
+  },
+  "C1125.MP4": {
+    "embedding": "embeddings\\C1125.npy",
+    "n_frames": 5
+  },
+  "C1126.MP4": {
+    "embedding": "embeddings\\C1126.npy",
+    "n_frames": 5
+  },
+  "C1127.MP4": {
+    "embedding": "embeddings\\C1127.npy",
+    "n_frames": 5
+  },
+  "C1130.MP4": {
+    "embedding": "embeddings\\C1130.npy",
+    "n_frames": 5
+  },
+  "C1131.MP4": {
+    "embedding": "embeddings\\C1131.npy",
+    "n_frames": 5
+  },
+  "C1132.MP4": {
+    "embedding": "embeddings\\C1132.npy",
+    "n_frames": 5
+  },
+  "C1133.MP4": {
+    "embedding": "embeddings\\C1133.npy",
+    "n_frames": 5
+  },
+  "C1134.MP4": {
+    "embedding": "embeddings\\C1134.npy",
+    "n_frames": 5
+  },
+  "C1135.MP4": {
+    "embedding": "embeddings\\C1135.npy",
+    "n_frames": 5
+  },
+  "C1136.MP4": {
+    "embedding": "embeddings\\C1136.npy",
+    "n_frames": 5
+  },
+  "C1137.MP4": {
+    "embedding": "embeddings\\C1137.npy",
+    "n_frames": 5
+  },
+  "C1138.MP4": {
+    "embedding": "embeddings\\C1138.npy",
+    "n_frames": 5
+  },
+  "C1139.MP4": {
+    "embedding": "embeddings\\C1139.npy",
+    "n_frames": 5
+  },
+  "C1140.MP4": {
+    "embedding": "embeddings\\C1140.npy",
+    "n_frames": 5
+  },
+  "C1141.MP4": {
+    "embedding": "embeddings\\C1141.npy",
+    "n_frames": 5
+  },
+  "C1142.MP4": {
+    "embedding": "embeddings\\C1142.npy",
+    "n_frames": 5
+  },
+  "C1143.MP4": {
+    "embedding": "embeddings\\C1143.npy",
+    "n_frames": 5
+  },
+  "C1144.MP4": {
+    "embedding": "embeddings\\C1144.npy",
+    "n_frames": 5
+  },
+  "C1145.MP4": {
+    "embedding": "embeddings\\C1145.npy",
+    "n_frames": 5
+  },
+  "C1146.MP4": {
+    "embedding": "embeddings\\C1146.npy",
+    "n_frames": 5
+  },
+  "C1147.MP4": {
+    "embedding": "embeddings\\C1147.npy",
+    "n_frames": 5
+  },
+  "C1148.MP4": {
+    "embedding": "embeddings\\C1148.npy",
+    "n_frames": 5
+  },
+  "C1149.MP4": {
+    "embedding": "embeddings\\C1149.npy",
+    "n_frames": 5
+  },
+  "C1150.MP4": {
+    "embedding": "embeddings\\C1150.npy",
+    "n_frames": 5
+  },
+  "C1151.MP4": {
+    "embedding": "embeddings\\C1151.npy",
+    "n_frames": 5
+  },
+  "C1152.MP4": {
+    "embedding": "embeddings\\C1152.npy",
+    "n_frames": 5
+  },
+  "C1153.MP4": {
+    "embedding": "embeddings\\C1153.npy",
+    "n_frames": 5
+  },
+  "C1155.MP4": {
+    "embedding": "embeddings\\C1155.npy",
+    "n_frames": 5
+  },
+  "C1156.MP4": {
+    "embedding": "embeddings\\C1156.npy",
+    "n_frames": 5
+  },
+  "C1157.MP4": {
+    "embedding": "embeddings\\C1157.npy",
+    "n_frames": 5
+  },
+  "C1158.MP4": {
+    "embedding": "embeddings\\C1158.npy",
+    "n_frames": 5
+  },
+  "C1159.MP4": {
+    "embedding": "embeddings\\C1159.npy",
+    "n_frames": 5
+  },
+  "C1160.MP4": {
+    "embedding": "embeddings\\C1160.npy",
+    "n_frames": 5
+  },
+  "C1161.MP4": {
+    "embedding": "embeddings\\C1161.npy",
+    "n_frames": 5
+  },
+  "C1178.MP4": {
+    "embedding": "embeddings\\C1178.npy",
+    "n_frames": 5
+  },
+  "C1179.MP4": {
+    "embedding": "embeddings\\C1179.npy",
+    "n_frames": 5
+  },
+  "C1180.MP4": {
+    "embedding": "embeddings\\C1180.npy",
+    "n_frames": 5
+  },
+  "C1181.MP4": {
+    "embedding": "embeddings\\C1181.npy",
+    "n_frames": 5
+  },
+  "C1182.MP4": {
+    "embedding": "embeddings\\C1182.npy",
+    "n_frames": 5
+  },
+  "C1183.MP4": {
+    "embedding": "embeddings\\C1183.npy",
+    "n_frames": 5
+  },
+  "C1184.MP4": {
+    "embedding": "embeddings\\C1184.npy",
+    "n_frames": 5
+  },
+  "C1185.MP4": {
+    "embedding": "embeddings\\C1185.npy",
+    "n_frames": 5
+  },
+  "C1186.MP4": {
+    "embedding": "embeddings\\C1186.npy",
+    "n_frames": 5
+  },
+  "C1187.MP4": {
+    "embedding": "embeddings\\C1187.npy",
+    "n_frames": 5
+  },
+  "C1188.MP4": {
+    "embedding": "embeddings\\C1188.npy",
+    "n_frames": 5
+  },
+  "C1189.MP4": {
+    "embedding": "embeddings\\C1189.npy",
+    "n_frames": 5
+  },
+  "C1190.MP4": {
+    "embedding": "embeddings\\C1190.npy",
+    "n_frames": 5
+  },
+  "C1191.MP4": {
+    "embedding": "embeddings\\C1191.npy",
+    "n_frames": 5
+  },
+  "C1192.MP4": {
+    "embedding": "embeddings\\C1192.npy",
+    "n_frames": 5
+  },
+  "C1193.MP4": {
+    "embedding": "embeddings\\C1193.npy",
+    "n_frames": 5
+  },
+  "C1194.MP4": {
+    "embedding": "embeddings\\C1194.npy",
+    "n_frames": 5
+  },
+  "C1195.MP4": {
+    "embedding": "embeddings\\C1195.npy",
+    "n_frames": 5
+  },
+  "C1196.MP4": {
+    "embedding": "embeddings\\C1196.npy",
+    "n_frames": 5
+  },
+  "C1197.MP4": {
+    "embedding": "embeddings\\C1197.npy",
+    "n_frames": 5
+  },
+  "C1198.MP4": {
+    "embedding": "embeddings\\C1198.npy",
+    "n_frames": 5
+  },
+  "C1199.MP4": {
+    "embedding": "embeddings\\C1199.npy",
+    "n_frames": 5
+  },
+  "C1200.MP4": {
+    "embedding": "embeddings\\C1200.npy",
+    "n_frames": 5
+  },
+  "C1201.MP4": {
+    "embedding": "embeddings\\C1201.npy",
+    "n_frames": 5
+  },
+  "C1202.MP4": {
+    "embedding": "embeddings\\C1202.npy",
+    "n_frames": 5
+  },
+  "C1203.MP4": {
+    "embedding": "embeddings\\C1203.npy",
+    "n_frames": 5
+  },
+  "C1214.MP4": {
+    "embedding": "embeddings\\C1214.npy",
+    "n_frames": 5
+  },
+  "C1215.MP4": {
+    "embedding": "embeddings\\C1215.npy",
+    "n_frames": 5
+  },
+  "C1216.MP4": {
+    "embedding": "embeddings\\C1216.npy",
+    "n_frames": 5
+  },
+  "C1217.MP4": {
+    "embedding": "embeddings\\C1217.npy",
+    "n_frames": 5
+  },
+  "C1218.MP4": {
+    "embedding": "embeddings\\C1218.npy",
+    "n_frames": 5
+  },
+  "C1219.MP4": {
+    "embedding": "embeddings\\C1219.npy",
+    "n_frames": 5
+  },
+  "C1220.MP4": {
+    "embedding": "embeddings\\C1220.npy",
+    "n_frames": 5
+  },
+  "C1221.MP4": {
+    "embedding": "embeddings\\C1221.npy",
+    "n_frames": 5
+  },
+  "C1222.MP4": {
+    "embedding": "embeddings\\C1222.npy",
+    "n_frames": 5
+  },
+  "C1223.MP4": {
+    "embedding": "embeddings\\C1223.npy",
+    "n_frames": 5
+  },
+  "C1224.MP4": {
+    "embedding": "embeddings\\C1224.npy",
+    "n_frames": 5
+  },
+  "C1225.MP4": {
+    "embedding": "embeddings\\C1225.npy",
+    "n_frames": 5
+  },
+  "C1226.MP4": {
+    "embedding": "embeddings\\C1226.npy",
+    "n_frames": 5
+  },
+  "C1227.MP4": {
+    "embedding": "embeddings\\C1227.npy",
+    "n_frames": 5
+  },
+  "C1228.MP4": {
+    "embedding": "embeddings\\C1228.npy",
+    "n_frames": 5
+  },
+  "C1229.MP4": {
+    "embedding": "embeddings\\C1229.npy",
+    "n_frames": 5
+  },
+  "C1230.MP4": {
+    "embedding": "embeddings\\C1230.npy",
+    "n_frames": 5
+  },
+  "C1330.MP4": {
+    "embedding": "embeddings\\C1330.npy",
+    "n_frames": 5
+  },
+  "C1331.MP4": {
+    "embedding": "embeddings\\C1331.npy",
+    "n_frames": 5
+  },
+  "C1332.MP4": {
+    "embedding": "embeddings\\C1332.npy",
+    "n_frames": 5
+  },
+  "C1358.MP4": {
+    "embedding": "embeddings\\C1358.npy",
+    "n_frames": 5
+  },
+  "C1359.MP4": {
+    "embedding": "embeddings\\C1359.npy",
+    "n_frames": 5
+  },
+  "C1360.MP4": {
+    "embedding": "embeddings\\C1360.npy",
+    "n_frames": 5
+  },
+  "C1361.MP4": {
+    "embedding": "embeddings\\C1361.npy",
+    "n_frames": 5
+  },
+  "C1362.MP4": {
+    "embedding": "embeddings\\C1362.npy",
+    "n_frames": 5
+  },
+  "C1363.MP4": {
+    "embedding": "embeddings\\C1363.npy",
+    "n_frames": 5
+  },
+  "C1364.MP4": {
+    "embedding": "embeddings\\C1364.npy",
+    "n_frames": 5
+  },
+  "C1491.MP4": {
+    "embedding": "embeddings\\C1491.npy",
+    "n_frames": 5
+  },
+  "Cut_Face_Zoom.mp4": {
+    "embedding": "embeddings\\Cut_Face_Zoom.npy",
+    "n_frames": 5
+  },
+  "eye_comp.mp4": {
+    "embedding": "embeddings\\eye_comp.npy",
+    "n_frames": 5
+  },
+  "C1505.MP4": {
+    "embedding": "embeddings\\C1505.npy",
+    "n_frames": 5
+  },
+  "C1499.MP4": {
+    "embedding": "embeddings\\C1499.npy",
+    "n_frames": 5
+  },
+  "C1501.MP4": {
+    "embedding": "embeddings\\C1501.npy",
+    "n_frames": 5
+  },
+  "C1502.MP4": {
+    "embedding": "embeddings\\C1502.npy",
+    "n_frames": 5
+  },
+  "C1503.MP4": {
+    "embedding": "embeddings\\C1503.npy",
+    "n_frames": 5
+  },
+  "C1504.MP4": {
+    "embedding": "embeddings\\C1504.npy",
+    "n_frames": 5
+  },
+  "C1500.MP4": {
+    "embedding": "embeddings\\C1500.npy",
+    "n_frames": 5
+  },
+  "C1392.MP4": {
+    "embedding": "embeddings\\C1392.npy",
+    "n_frames": 5
+  },
+  "focus.mov": {
+    "embedding": "embeddings\\focus.npy",
+    "n_frames": 5
+  },
+  "vid.mov": {
+    "embedding": "embeddings\\vid.npy",
+    "n_frames": 5
+  },
+  "Soirée Gardanne.mov": {
+    "embedding": "embeddings\\Soirée Gardanne.npy",
+    "n_frames": 5
+  },
+  "2025-02-14 18-15-01.mp4": {
+    "embedding": "embeddings\\2025-02-14 18-15-01.npy",
+    "n_frames": 5
+  },
+  "2025-02-14 18-16-00.mp4": {
+    "embedding": "embeddings\\2025-02-14 18-16-00.npy",
+    "n_frames": 5
+  },
+  "2025-02-14 19-04-53.mp4": {
+    "embedding": "embeddings\\2025-02-14 19-04-53.npy",
+    "n_frames": 5
+  },
+  "2025-02-14 19-05-00.mp4": {
+    "embedding": "embeddings\\2025-02-14 19-05-00.npy",
+    "n_frames": 5
+  },
+  "2025-02-14 19-05-12.mp4": {
+    "embedding": "embeddings\\2025-02-14 19-05-12.npy",
+    "n_frames": 5
+  }
+}
