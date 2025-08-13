@@ -61,4 +61,4 @@ for phrase in phrases_data:
 with open(output_file, "w", encoding="utf-8") as f:
     json.dump(video_build_data, f, indent=4, ensure_ascii=False)
 
-print(f"✅ Fichier généré : {output_file}")
+print(f" Fichier généré : {output_file}")

@@ -13,7 +13,7 @@ from scipy.spatial.distance import cosine
 EMBEDDINGS_DIR = "embeddings"
 VIDEO_DIR = "clips_input"  # Où se trouvent tes vidéos originales
 TAGS_FILE = "D:\\Principal\\Vidéo\\Developpement_outil_automatisation_video\\clip-ingest\\tags.txt"  # Liste de tags, un par ligne
-TOP_N = 7  # Nombre de tags à retenir
+TOP_N = 5  # Nombre de tags à retenir
 EXIFTOOL_PATH = r"D:\Principal\Vidéo\Developpement_outil_automatisation_video\venv\exiftool-13.33_64\exiftool-13.33_64\exiftool(-k).exe"  # Chemin vers exiftool.exe
 
 # --------------------
@@ -36,46 +36,37 @@ text_embeddings = model.get_text_features(**text_inputs).detach().numpy()
 # --------------------
 # 3. Parcourir chaque embedding vidéo
 # --------------------
-print("Fichiers dans EMBEDDINGS_DIR :", os.listdir(EMBEDDINGS_DIR))
-for fname in os.listdir(EMBEDDINGS_DIR):
-    print("Fichier trouvé :", fname)
-    if fname.endswith(".npy"):
-        print("Traitement du fichier :", fname)
-        video_name = os.path.splitext(fname)[0]  # enlève juste l'extension .npy
-        video_path = os.path.join(VIDEO_DIR, f"{video_name}.MP4")
-        video_embedding = np.load(os.path.join(EMBEDDINGS_DIR, fname))
+print("Fichiers dans VIDEO_DIR :", os.listdir(VIDEO_DIR))
+for video_file in os.listdir(VIDEO_DIR):
+    if video_file.lower().endswith(".mp4"):
+        video_name = os.path.splitext(video_file)[0]
+        npy_file = f"{video_name}.npy"
+        npy_path = os.path.join(EMBEDDINGS_DIR, npy_file)
+        video_path = os.path.join(VIDEO_DIR, video_file)
 
-        # --------------------
-        # 4. Calculer similarités cosinus
-        # --------------------
+        if not os.path.exists(npy_path):
+            print(f"Embedding non trouvé pour {video_file}")
+            continue
+
+        print("Traitement du fichier :", video_file)
+        video_embedding = np.load(npy_path)
+
+        # Calculer similarités cosinus
         similarities = []
         for tag, text_emb in zip(tags, text_embeddings):
             sim = 1 - cosine(video_embedding, text_emb)
             similarities.append((tag, sim))
 
-        # --------------------
-        # 5. Sélectionner top-N tags
-        # --------------------
         similarities.sort(key=lambda x: x[1], reverse=True)
         best_tags = [tag for tag, _ in similarities[:TOP_N]]
 
-        print(f"Vidéo {video_name} → Tags : {best_tags}")
+        print(f"Vidéo {video_name} >> Tags : {best_tags}")
 
-        # --------------------
-        # 6. Renommer la vidéo avec date + tags (sans ExifTool bloquant)
-        # --------------------
-
-            # Essayer d'obtenir la date système
+        # Renommer la vidéo avec date + tags
         ts = os.path.getctime(video_path)
         creation_date = datetime.datetime.fromtimestamp(ts).strftime("%Y_%m_%d")
-
-        # Nettoyer les tags pour éviter caractères interdits
         safe_tags = [tag.replace(" ", "_") for tag in best_tags]
-
-        # Déterminer l'extension (si absente on laisse vide)
         ext = os.path.splitext(video_path)[1]
-
-        # Construire le nouveau nom
         base_dir = os.path.dirname(video_path)
         new_name = f"{creation_date}-" + "-".join(safe_tags) + ext
         new_path = os.path.join(base_dir, new_name)
@@ -89,13 +80,15 @@ for fname in os.listdir(EMBEDDINGS_DIR):
             counter += 1
 
         os.rename(video_path, new_path)
+        print(f" Fichier renommé : {new_path}")
 
-        print(f"✅ Fichier renommé : {new_path}")
+        # Renommer aussi le fichier .npy pour qu'il corresponde au nouveau nom (sans extension .mp4)
+        new_npy_name = os.path.splitext(new_name)[0] + ".npy"
+        new_npy_path = os.path.join(EMBEDDINGS_DIR, new_npy_name)
+        os.rename(npy_path, new_npy_path)
+        print(f" Fichier embedding renommé : {new_npy_path}")
 
-
-        # --------------------
-        # 7. Supprimer les fichiers temporaires
-        # --------------------
-        os.remove(os.path.join(EMBEDDINGS_DIR, fname))
-        print(f"🗑️ Fichier embedding supprimé : {fname}")
+        # Supprimer les fichiers temporaires si besoin
+        # os.remove(new_npy_path)
+        # print(f" Fichier embedding supprimé : {new_npy_path}")
 

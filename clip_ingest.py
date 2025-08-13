@@ -11,7 +11,7 @@ from transformers import CLIPProcessor, CLIPModel
 
 
 # --- CONFIG ---
-INPUT_DIR = "D:\Principal\Vidéo\Banque de donnée Vidéo\Perso"
+INPUT_DIR = "D:\Principal\Vidéo\Developpement_outil_automatisation_video\clip-ingest\clips_input"
 FRAMES_DIR = "frames_tmp"
 EMB_DIR = "embeddings"
 FPS = 1                 # frames per second to extract (ajuste)

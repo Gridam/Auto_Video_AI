@@ -42,8 +42,26 @@ def find_best_videos_for_text(text, top_k=3):
 
 # --- Traitement de toutes les phrases ---
 if __name__ == "__main__":
+    # Charger toutes les phrases
     with open(PHRASES_FILE, "r", encoding="utf-8") as f:
         phrases = json.load(f)
+
+    # Calculer l'embedding moyen de toutes les phrases
+    all_embeddings = []
+    for p in phrases:
+        # Tronquer chaque phrase à 77 tokens si besoin
+        text = p["text"]
+        tokens = processor.tokenizer.tokenize(text)
+        if len(tokens) > 77:
+            tokens = tokens[:77]
+            text = processor.tokenizer.convert_tokens_to_string(tokens)
+        inputs = processor(text=[text], return_tensors="pt", padding=True).to(device)
+        with torch.no_grad():
+            emb = model.get_text_features(**inputs)
+        all_embeddings.append(emb.cpu().numpy())
+
+    # Moyenne des embeddings (shape: (1, 512))
+    global_text_emb = np.mean(np.vstack(all_embeddings), axis=0, keepdims=True)
 
     used_clips = set()
     last_video_emb = None
@@ -57,28 +75,29 @@ if __name__ == "__main__":
 
         candidates = find_best_videos_for_text(phrase["text"], top_k=20)  # On prend plus de candidats pour avoir du choix
 
+        alpha = 1.0
+        beta = 1.0
+        gamma = 2.0
+
         selected = []
         for _ in range(n_videos):
-            # Filtrer les candidats déjà utilisés
             filtered = [c for c in candidates if c["npy_path"] not in used_clips]
             if not filtered:
-                filtered = candidates  # Si tous déjà utilisés, on autorise la répétition
+                filtered = candidates
 
-            # Si ce n'est pas le premier, on maximise la distance avec le précédent
-            if last_video_emb is not None:
-                best_score = -float("inf")
-                best_cand = None
-                for cand in filtered:
-                    video_emb = np.load(cand["npy_path"])
-                    # On veut une bonne similarité texte ET une faible similarité avec le précédent
+            best_score = -float("inf")
+            best_cand = None
+            for cand in filtered:
+                video_emb = np.load(cand["npy_path"])
+                diversity = 0
+                if last_video_emb is not None:
                     diversity = 1 - cosine_similarity(video_emb.reshape(1, -1), last_video_emb.reshape(1, -1))[0][0]
-                    score = cand["score"] + diversity  # pondération simple, tu peux ajuster
-                    if score > best_score:
-                        best_score = score
-                        best_cand = cand
-                chosen = best_cand
-            else:
-                chosen = filtered[0]  # Premier clip : le plus proche du texte
+                global_score = cosine_similarity(video_emb.reshape(1, -1), global_text_emb)[0][0]
+                score = alpha * cand["score"] + beta * diversity + gamma * global_score
+                if score > best_score:
+                    best_score = score
+                    best_cand = cand
+            chosen = best_cand
 
             selected.append(chosen)
             used_clips.add(chosen["npy_path"])
